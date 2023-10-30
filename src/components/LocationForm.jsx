@@ -8,7 +8,7 @@ export default function LocationForm({ getLocation, handleChange }) {
         name="locationInput"
         className="locationInput"
       />
-      <button className="locationSubmit">SUBMIT</button>
+      <button className="locationSubmit">Explore!</button>
     </form>
   );
 }
