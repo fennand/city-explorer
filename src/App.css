@@ -1,42 +1,60 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+
+h1 {
+  font-family: "Ranchers", cursive;
+  background: url(https://drive.google.com/uc?export=view&id=1qvnbL55D_X7Bzo6fwwtXNyjhBhgi1iyX);
+  margin: 1.5rem auto;
+  display: inline-flex;
+  font-size: 10rem;
+  background-position: 0 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #5b728a54;
+  animation: animatedOne 30s linear infinite;
+  text-align: center;
+}
+@keyframes animatedOne {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+h2 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-color: #002f6c;
+  background-image: linear-gradient(15deg, #002f6c 0%, #000 80%);
+  background-size: cover;
+  color: bisque;
+  font-family: monospace;
+  font-size: 1.2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+img {
+  border: 2px solid bisque;
+  border-radius: 5px;
+  max-width: 50%;
+  max-height: 700px;
 }
 
-.card {
-  padding: 2em;
+.locationInput {
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+.locationSubmit {
+  background-color: bisque;
+  padding: 3px 6px;
+  border-radius: 5px;
 }
